@@ -1,0 +1,26 @@
+name: ReservationApp
+options:
+  bundleIdPrefix: com.portfolio
+  deploymentTarget:
+    iOS: "18.0"
+settings:
+  SWIFT_VERSION: "6.0"
+targets:
+  ReservationApp:
+    type: application
+    platform: iOS
+    sources:
+      - Sources/ReservationApp
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.portfolio.ReservationApp
+      INFOPLIST_FILE: Sources/ReservationApp/Info.plist
+      DEVELOPMENT_TEAM: ""
+    info:
+      path: Sources/ReservationApp/Info.plist
+      properties:
+        UILaunchStoryboardName: LaunchScreen
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+          UISceneConfigurations: {}

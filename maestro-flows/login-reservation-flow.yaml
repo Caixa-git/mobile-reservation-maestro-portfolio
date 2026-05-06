@@ -1,0 +1,37 @@
+appId: com.portfolio.ReservationApp
+---
+- launchApp
+- waitForAnimationToEnd
+- assertVisible:
+    id: "app_title"
+- tapOn:
+    id: "quick_login_button"
+- waitForAnimationToEnd
+- assertVisible:
+    id: "welcome_text"
+- tapOn:
+    id: "reserve_button"
+- waitForAnimationToEnd
+- assertVisible:
+    id: "service_selection_title"
+- tapOn:
+    id: "service_기본 케어"
+- tapOn:
+    id: "next_button"
+- waitForAnimationToEnd
+- assertVisible:
+    id: "datetime_title"
+- tapOn:
+    id: "date_01"
+- tapOn:
+    id: "time_01"
+- tapOn:
+    id: "next_button"
+- waitForAnimationToEnd
+- assertVisible:
+    id: "confirmation_title"
+- tapOn:
+    id: "confirm_button"
+- waitForAnimationToEnd
+- assertVisible:
+    id: "complete_title"
