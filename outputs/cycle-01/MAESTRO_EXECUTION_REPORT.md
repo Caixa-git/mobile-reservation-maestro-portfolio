@@ -167,16 +167,19 @@ CompleteScreen (complete_title 확인) ← 최종 목적지
 
 ## 8. 실행 스크린샷
 
-| 단계 | 설명 | 파일 |
-|------|------|------|
-| 01 | 앱 실행 화면 | `step-01-launched.png.png` |
-| 02 | 이메일 필드 탭 | `step-02-tapped-email.png.png` |
-| 03 | 이메일 입력 | `step-03-typed-email.png.png` |
-| A | 비밀번호 필드 탭 | `step-a-tapped-password.png.png` |
-| B | 비밀번호 입력 | `step-b-typed-password.png.png` |
-| C | 로그인 완료 | `step-c-tapped-login.png.png` |
+실제 앱 실행 화면 스크린샷입니다 (iPhone 17 Pro Simulator, iOS 26.4).
 
-> 스크린샷은 디버그 테스트 과정에서 캡처된 이미지로, 최종 메인 Flow 실행 시에는 별도 스크린샷이 저장되지 않았습니다.
+| 단계 | 설명 | 스크린샷 | 링크 |
+|------|------|---------|------|
+| 01 | **Login Screen** — 앱 실행 후 로그인 화면 | ![01-login](../../screenshots/01-login.png) | [🔗 보기](../../screenshots/01-login.png) |
+| 02 | **Home Screen** — 빠른 로그인 후 환영 메시지 | ![02-home](../../screenshots/02-home.png) | [🔗 보기](../../screenshots/02-home.png) |
+| 03 | **Service Selection** — 서비스 유형 선택 | ![03-service-selection](../../screenshots/03-service-selection.png) | [🔗 보기](../../screenshots/03-service-selection.png) |
+| 04 | **Date/Time Selection** — 날짜 및 시간 선택 | ![04-date-time-selection](../../screenshots/04-date-time-selection.png) | [🔗 보기](../../screenshots/04-date-time-selection.png) |
+| 05 | **Confirmation** — 예약 정보 확인 | ![05-confirmation](../../screenshots/05-confirmation.png) | [🔗 보기](../../screenshots/05-confirmation.png) |
+| 06 | **Complete** — 예약 완료 화면 | ![06-complete](../../screenshots/06-complete.png) | [🔗 보기](../../screenshots/06-complete.png) |
+| 07 | **Maestro 실행 결과** — 터미널 전체 로그 (19/19 COMPLETED) | ![07-maestro-run-completed](../../screenshots/07-maestro-run-completed.png) | [🔗 보기](../../screenshots/07-maestro-run-completed.png) |
+
+> 스크린샷 전체 목록: [screenshots/](../../screenshots/)
 
 ## 9. 실행 환경 상세
 

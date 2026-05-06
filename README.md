@@ -96,6 +96,28 @@ LoginScreen
                                       └─ CompleteScreen (예약 완료!)
 ```
 
+## 📸 스크린샷 갤러리
+
+앱 화면 흐름 및 Maestro 실행 결과 스크린샷입니다.
+
+| 화면 | 스크린샷 |
+|:-----|:--------:|
+| **Login Screen** — 이메일/비밀번호 입력 및 빠른 로그인 | ![01-login](screenshots/01-login.png) |
+| **Home Screen** — 환영 메시지 및 예약하기 | ![02-home](screenshots/02-home.png) |
+| **Service Selection** — 서비스 유형 선택 | ![03-service-selection](screenshots/03-service-selection.png) |
+| **Date/Time Selection** — 날짜 및 시간 선택 | ![04-date-time-selection](screenshots/04-date-time-selection.png) |
+| **Confirmation** — 예약 정보 확인 | ![05-confirmation](screenshots/05-confirmation.png) |
+| **Complete** — 예약 완료 | ![06-complete](screenshots/06-complete.png) |
+
+> 스크린샷은 iPhone 17 Pro Simulator (iOS 26.4)에서 캡처되었습니다.
+> 전체 스크린샷 목록은 [screenshots/](screenshots/) 디렉토리에서 확인할 수 있습니다.
+
+### Maestro 실행 결과
+
+![07-maestro-run-completed](screenshots/07-maestro-run-completed.png)
+
+> 19 Steps 전부 **COMPLETED** — exit code 0 정상 종료
+
 ## 🧪 Maestro 테스트 결과
 
 ### Flow: `login-reservation-flow.yaml`

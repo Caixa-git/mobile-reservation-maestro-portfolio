@@ -14,6 +14,7 @@
 | 6 | **VERIFICATION_STATUS.md** | 검증 상태표 — Cycle 01 전체 검증 항목 상태 매트릭스 | [📄 VERIFICATION_STATUS.md](cycle-01/VERIFICATION_STATUS.md) |
 | 7 | **CHANGE_SUMMARY.md** | 변경 요약 — 생성/수정된 파일 목록 및 설명 | [📄 CHANGE_SUMMARY.md](cycle-01/CHANGE_SUMMARY.md) |
 | 8 | **REVIEW_REQUEST.md** | 리뷰 요청 — Cycle 01 결과에 대한 공식 리뷰 요청서 | [📄 REVIEW_REQUEST.md](cycle-01/REVIEW_REQUEST.md) |
+| 9 | **스크린샷 갤러리** | 앱 6개 화면 + Maestro 실행 결과 스크린샷 (총 7장) | [📸 스크린샷](../screenshots/) |
 
 ## 참고 자료
 
@@ -23,6 +24,7 @@
 | 메인 Maestro Flow | 전체 E2E 예약 플로우 | [maestro-flows/login-reservation-flow.yaml](../maestro-flows/login-reservation-flow.yaml) |
 | 앱 소스 코드 | SwiftUI 소스 파일 | [Sources/ReservationApp/](../Sources/ReservationApp/) |
 | 데이터 모델 | Service, Reservation 모델 | [Models/ReservationModel.swift](../Sources/ReservationApp/Models/ReservationModel.swift) |
+| 스크린샷 디렉토리 | 앱 화면 6장 + Maestro 실행 결과 1장 | [screenshots/](../screenshots/) |
 
 ## 문서 상태
 
