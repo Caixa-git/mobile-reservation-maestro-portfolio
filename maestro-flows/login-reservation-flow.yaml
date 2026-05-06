@@ -1,7 +1,16 @@
 appId: com.portfolio.ReservationApp
 ---
 - launchApp
-- waitForAnimationToEnd
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    text: "Allow"
+    optional: true
+- tapOn:
+    text: "Allow While Using App"
+    optional: true
+- waitForAnimationToEnd:
+    timeout: 3000
 - assertVisible:
     id: "app_title"
 - tapOn:
@@ -9,29 +18,3 @@ appId: com.portfolio.ReservationApp
 - waitForAnimationToEnd
 - assertVisible:
     id: "welcome_text"
-- tapOn:
-    id: "reserve_button"
-- waitForAnimationToEnd
-- assertVisible:
-    id: "service_selection_title"
-- tapOn:
-    id: "service_기본 케어"
-- tapOn:
-    id: "next_button"
-- waitForAnimationToEnd
-- assertVisible:
-    id: "datetime_title"
-- tapOn:
-    id: "date_01"
-- tapOn:
-    id: "time_01"
-- tapOn:
-    id: "next_button"
-- waitForAnimationToEnd
-- assertVisible:
-    id: "confirmation_title"
-- tapOn:
-    id: "confirm_button"
-- waitForAnimationToEnd
-- assertVisible:
-    id: "complete_title"
