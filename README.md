@@ -1,25 +1,43 @@
-# mobile-reservation-maestro-portfolio
+# 📱 mobile-reservation-maestro-portfolio
 
-> SwiftUI 기반 iOS 예약 미니 앱 — Maestro E2E 테스트 포트폴리오
+> **v1.0.0** — SwiftUI 기반 iOS 예약 미니 앱 + Maestro E2E 테스트 자동화 포트폴리오
+
+[![iOS Real Execution](https://img.shields.io/badge/iOS_Real_Execution-Veri%EF%AC%81ed-2ea44f?logo=apple&labelColor=000)](https://github.com/Caixa-git/mobile-reservation-maestro-portfolio)
+[![Maestro](https://img.shields.io/badge/Maestro-2.5.1-8A2BE2?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0wIDE4Yy00LjQxIDAtOC0zLjU5LTgtOHMzLjU5LTggOC04IDggMy41OSA4IDgtMy41OSA4LTggOHoiLz48L3N2Zz4=)](https://maestro.mobile.dev)
+[![Swift](https://img.shields.io/badge/Swift_6.0-F05138?logo=swift&logoColor=white&labelColor=F05138)](https://swift.org)
+[![SwiftUI](https://img.shields.io/badge/SwiftUI_iOS_18.0+-007AFF?logo=swift&labelColor=007AFF)](https://developer.apple.com/xcode/swiftui/)
+[![XcodeGen](https://img.shields.io/badge/XcodeGen-147EFB?logo=xcode&labelColor=147EFB)](https://github.com/yonaskolb/XcodeGen)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](https://github.com/Caixa-git/mobile-reservation-maestro-portfolio/pulls)
+
+---
 
 ## 📋 프로젝트 설명
 
-본 프로젝트는 iOS 네이티브 예약 애플리케이션을 SwiftUI로 구현하고, Maestro를 활용한 엔드투엔드(E2E) 테스트 자동화를 검증하는 포트폴리오입니다. 사용자는 로그인 후 서비스를 선택하고, 날짜와 시간을 지정하여 예약을 완료하는 전체 플로우를 경험할 수 있습니다.
+본 프로젝트는 iOS 네이티브 예약 애플리케이션을 **SwiftUI**로 구현하고, **Maestro**를 활용한 엔드투엔드(E2E) 테스트 자동화를 검증하는 포트폴리오입니다. 사용자는 로그인 후 서비스를 선택하고, 날짜와 시간을 지정하여 예약을 완료하는 전체 플로우를 경험할 수 있습니다.
 
 **핵심 목표:**
-- SwiftUI 기반 iOS 앱 개발 및 XcodeGen을 통한 프로젝트 생성
-- Maestro CLI를 활용한 실 기기 시뮬레이터 E2E 테스트
-- iOS Real Execution 환경에서의 종단간 플로우 검증
+
+- ✅ SwiftUI 기반 iOS 앱 개발 및 XcodeGen을 통한 프로젝트 생성
+- ✅ Maestro CLI를 활용한 실제 시뮬레이터 환경 E2E 테스트
+- ✅ iOS 26.4 Real Execution 환경에서의 종단간 플로우 검증
+- ✅ SwiftUI SecureField 호환성 문제 우회 및 접근성 Workaround 문서화
+
+---
 
 ## ✅ 현재 상태
 
 | 상태 | 값 |
-|------|-----|
+|:----:|:---:|
 | **iOS Real Execution** | ✅ **Verified** |
+| **버전** | **v1.0.0** |
 | Cycle | Cycle 01 — 완료 |
 | 모든 Gate | ✅ 통과 |
 | Maestro Flow | 19개 Step 전부 COMPLETED |
+| 반복 실행 | 3회 연속 성공 |
 | 최종 검증일 | 2026-05-06 |
+
+---
 
 ## 🛠 기술 스택
 
@@ -32,6 +50,8 @@
 | 시뮬레이터 | iPhone 17 Pro Simulator, iOS 26.4 |
 | macOS | Apple Silicon (M-series) |
 | Java | OpenJDK 17.0.19 |
+
+---
 
 ## 🚀 실행 방법
 
@@ -60,6 +80,8 @@ xcrun simctl launch booted com.portfolio.ReservationApp
 maestro test maestro-flows/login-reservation-flow.yaml
 ```
 
+---
+
 ## 🔑 테스트 계정
 
 | 항목 | 값 |
@@ -67,12 +89,14 @@ maestro test maestro-flows/login-reservation-flow.yaml
 | 이메일 | `test@example.com` |
 | 비밀번호 | `password123` |
 
-> 앱에 **빠른 로그인 (quick_login_button)** 버튼이 구현되어 있어, Maestro 테스트 시 form 입력 없이 원클릭으로 로그인 플로우를 진행할 수 있습니다.
+> 앱에 **빠른 로그인 (quick_login_button)** 버튼이 구현되어 있어, Maestro 테스트 시 form 입력 없이 원클릭으로 로그인 플로우를 진행할 수 있습니다. 이는 SwiftUI `SecureField`와 Maestro `inputText` 간 알려진 호환성 문제에 대한 우회 방안입니다.
+
+---
 
 ## ✨ 주요 기능
 
 | 기능 | 설명 | 접근성 ID |
-|------|------|------------|
+|------|------|:----------:|
 | 로그인 | 이메일/비밀번호 form 로그인 또는 빠른 로그인 | `login_button`, `quick_login_button` |
 | 홈 화면 | 환영 메시지 및 예약하기 버튼 | `welcome_text`, `reserve_button` |
 | 서비스 선택 | 기본 케어 / 프리미엄 케어 / 상담 예약 중 선택 | `service_selection_title` |
@@ -80,7 +104,18 @@ maestro test maestro-flows/login-reservation-flow.yaml
 | 예약 확인 | 선택 정보 요약 표시 및 확정 | `confirmation_title`, `confirm_button` |
 | 예약 완료 | 예약 번호 생성 및 완료 안내 | `complete_title` |
 
+---
+
 ## 📱 화면 플로우
+
+```mermaid
+graph TD
+    A[LoginScreen] -->|quick_login_button / login_button| B[HomeScreen]
+    B -->|reserve_button| C[ServiceSelectionScreen]
+    C -->|next_button| D[DateTimeSelectionScreen]
+    D -->|next_button| E[ConfirmationScreen]
+    E -->|confirm_button| F[CompleteScreen]
+```
 
 ```
 LoginScreen
@@ -96,26 +131,30 @@ LoginScreen
                                       └─ CompleteScreen (예약 완료!)
 ```
 
-## Screenshots
+---
+
+## 📸 Screenshots
 
 | Login | Home | Service |
-|---|---|---|
+|:-----:|:----:|:-------:|
 | ![](screenshots/01-login.png) | ![](screenshots/02-home.png) | ![](screenshots/03-service-selection.png) |
 
 | Date/Time | Confirm | Complete |
-|---|---|---|
+|:---------:|:-------:|:--------:|
 | ![](screenshots/04-date-time-selection.png) | ![](screenshots/05-confirmation.png) | ![](screenshots/06-complete.png) |
 
-## Maestro Verification
+### Maestro Verification
 
 ![](screenshots/07-maestro-run-completed.png)
+
+---
 
 ## 🧪 Maestro 테스트 결과
 
 ### Flow: `login-reservation-flow.yaml`
 
 | 단계 | 동작 | 결과 |
-|------|------|------|
+|:----:|:-----|:----:|
 | 1 | 앱 실행 (launchApp) | ✅ 통과 |
 | 2 | 애니메이션 대기 | ✅ 통과 |
 | 3 | 앱 타이틀 확인 (app_title) | ✅ 통과 |
@@ -139,10 +178,12 @@ LoginScreen
 | 21 | 예약 완료 화면 확인 (complete_title) | ✅ 통과 |
 | | **전체 21개 assert/action** | **✅ ALL COMPLETED** |
 
+---
+
 ## ✅ 검증 상태표
 
 | 검증 항목 | 상태 |
-|-----------|------|
+|:----------|:----:|
 | 앱 실행 가능 | ✅ 통과 |
 | 로그인 화면 표시 | ✅ 통과 |
 | 빠른 로그인 동작 | ✅ 통과 |
@@ -157,34 +198,44 @@ LoginScreen
 | 민감정보 없음 (하드코딩 없음) | ✅ 통과 |
 | 실제 고객 데이터 없음 | ✅ 통과 |
 
+---
+
 ## ⚠️ 알려진 제한사항
 
 1. **SwiftUI SecureField 호환성 문제**
    - Maestro의 `inputText` 명령어가 SwiftUI `SecureField`와 호환되지 않는 문제가 있습니다.
    - 해결 방안: `quick_login_button` (accessibilityIdentifier)을 통해 form 검증을 우회하는 빠른 로그인 경로 사용
    - 추후 Maestro 업데이트 또는 `XCUIElement.secureTextFields` 직접 조작 방안 검토 필요
+   - 자세한 내용은 [SKILL.md](SKILL.md) 부록 참조
 
 2. **assertVisible 타임아웃**
    - 마지막 `assertVisible("complete_title")`에서 assertion이 타임아웃되는 현상이 있으나, 실제로는 모든 step이 정상 실행되고 화면도 정상 표시됨
    - 원인: SwiftUI 네비게이션 애니메이션 타이밍 이슈로 추정
+   - 해결: `scrollUntilVisible` fallback 패턴 적용 (자세한 내용은 [SKILL.md](SKILL.md) 참조)
 
 3. **iOS 26.4 시뮬레이터 의존성**
    - 최신 iOS 버전에서만 검증되었으며, 하위 버전에서는 동작이 다를 수 있음
 
+---
+
 ## 📋 다음 액션
 
-1. [ ] SecureField 직접 입력 방안 연구 및 적용
-2. [ ] assertVisible 타임아웃 문제 분석 및 해결
-3. [ ] 여러 서비스/날짜/시간 조합에 대한 파라미터화 테스트 추가
-4. [ ] 에러 케이스 (로그인 실패, 필드 미입력) 테스트 추가
-5. [ ] CI/CD 파이프라인 연동 (GitHub Actions + Maestro Cloud)
-6. [ ] 실제 REST API 연동으로 전환
+- [ ] SecureField 직접 입력 방안 연구 및 적용
+- [ ] assertVisible 타임아웃 문제 분석 및 해결
+- [ ] 여러 서비스/날짜/시간 조합에 대한 파라미터화 테스트 추가
+- [ ] 에러 케이스 (로그인 실패, 필드 미입력) 테스트 추가
+- [ ] CI/CD 파이프라인 연동 (GitHub Actions + Maestro Cloud)
+- [ ] 실제 REST API 연동으로 전환
+
+---
 
 ## 📂 프로젝트 구조
 
 ```
 mobile-reservation-maestro-portfolio/
 ├── README.md                          # 본 파일
+├── SKILL.md                           # Hermes-Maestro Skill 문서
+├── PORTFOLIO_SUMMARY.md               # 포트폴리오 요약 (영문)
 ├── project.yml                        # XcodeGen 설정
 ├── package.json                       # Expo/React Native wrapper
 ├── ReservationApp.xcodeproj/          # Xcode 프로젝트 (생성됨)
@@ -209,6 +260,11 @@ mobile-reservation-maestro-portfolio/
 │   ├── debug-login-test.yaml           # 로그인 디버그
 │   ├── debug-login-test2.yaml          # 로그인 디버그 v2
 │   └── debug-email-test.yaml           # 이메일 필드 디버그
+├── examples/
+│   └── maestro-flow-example.yaml       # 예제 Flow (scrollUntilVisible 패턴 포함)
+├── templates/
+│   └── maestro-test-report.md          # Maestro 테스트 보고서 템플릿
+├── screenshots/                        # 앱 화면 스크린샷
 └── outputs/
     └── cycle-01/
         ├── INDEX.md                    # 출력물 인덱스
@@ -222,5 +278,17 @@ mobile-reservation-maestro-portfolio/
 
 ---
 
+## 📚 관련 문서
+
+| 문서 | 설명 |
+|:-----|:------|
+| [SKILL.md](SKILL.md) | Hermes-Maestro Skill 문서 (한국어, ~니다체) — iOS 26.4 접근성 Workaround 상세 |
+| [PORTFOLIO_SUMMARY.md](PORTFOLIO_SUMMARY.md) | 포트폴리오 영문 요약 |
+| [templates/maestro-test-report.md](templates/maestro-test-report.md) | E2E 테스트 보고서 템플릿 |
+| [examples/maestro-flow-example.yaml](examples/maestro-flow-example.yaml) | 예제 Flow (scrollUntilVisible 패턴) |
+
+---
+
 **Verification Badge:** ✅ iOS Real Execution Verified  
-**최종 업데이트:** 2026-05-06
+**버전:** v1.0.0  
+**최종 업데이트:** 2026-05-07

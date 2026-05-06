@@ -1,6 +1,7 @@
 # Portfolio Summary: iOS Mobile Reservation E2E Test Automation
 
 > **프로젝트:** SwiftUI 예약 미니 앱 + Maestro E2E 테스트 자동화  
+> **버전:** v1.0.0  
 > **실행 검증:** iOS Real Execution Verified ✅  
 > **검증일:** 2026-05-06
 
@@ -69,6 +70,9 @@ Full details documented in: [maestro SKILL.md Section 10](https://github.com/Cai
 | `maestro-flows/login-reservation-flow.yaml` | 19-step E2E Maestro flow |
 | `screenshots/` | 7 screenshots (6 app screens + 1 terminal result) |
 | `README.md` | Project overview, execution guide, verification status |
+| `SKILL.md` | Hermes-Maestro Skill document (Korean, all sections) |
+| `templates/maestro-test-report.md` | E2E test report template |
+| `examples/maestro-flow-example.yaml` | Example Maestro flow with scrollUntilVisible pattern |
 | `outputs/cycle-01/` | Full cycle report, QA results, execution report, verification matrix |
 
 ---
