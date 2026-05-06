@@ -1,6 +1,6 @@
 # 📱 mobile-reservation-maestro-portfolio
 
-> **v1.0.0** — SwiftUI 기반 iOS 예약 미니 앱 + Maestro E2E 테스트 자동화 포트폴리오
+> **v2.0.0** — SwiftUI 기반 iOS 예약 미니 앱 + Maestro E2E 테스트 자동화 포트폴리오
 
 [![iOS Real Execution](https://img.shields.io/badge/iOS_Real_Execution-Veri%EF%AC%81ed-2ea44f?logo=apple&labelColor=000)](https://github.com/Caixa-git/mobile-reservation-maestro-portfolio)
 [![Maestro](https://img.shields.io/badge/Maestro-2.5.1-8A2BE2?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0wIDE4Yy00LjQxIDAtOC0zLjU5LTgtOHMzLjU5LTggOC04IDggMy41OSA4IDgtMy41OSA4LTggOHoiLz48L3N2Zz4=)](https://maestro.mobile.dev)
@@ -30,7 +30,7 @@
 | 상태 | 값 |
 |:----:|:---:|
 | **iOS Real Execution** | ✅ **Verified** |
-| **버전** | **v1.0.0** |
+| **버전** | **v2.0.0** |
 | Cycle | Cycle 01 — 완료 |
 | 모든 Gate | ✅ 통과 |
 | Maestro Flow | 19개 Step 전부 COMPLETED |
@@ -290,5 +290,5 @@ mobile-reservation-maestro-portfolio/
 ---
 
 **Verification Badge:** ✅ iOS Real Execution Verified  
-**버전:** v1.0.0  
+**버전:** v2.0.0  
 **최종 업데이트:** 2026-05-07
